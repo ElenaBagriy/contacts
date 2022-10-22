@@ -1,0 +1,21 @@
+.logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo__contrast {
+    color: $accent-color;
+}
+.logo--footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #ffffff;
+}

@@ -1,0 +1,103 @@
+.callback-form {
+    padding: 40px;
+}
+.callback-form__call-to-action {
+    display: block;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+.callback-form__field {
+    position: relative;
+    margin-bottom: 10px;
+}
+.callback-form__field--comment {
+    margin-bottom: 20px;
+}
+.callback-form__label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+}
+.callback-form__input {
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+    width: 100%;
+    height: 40px;
+    transition-delay: border-color color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: $accent-color;
+        outline: none;
+    }
+}
+.callback-form__textarea {
+    resize: none;
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    transition: border-color $transition-dure-and-function;
+    &:focus {
+        border-color: $accent-color;
+        outline: none;
+    }
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+.callback-form__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    fill: currentColor;
+    color: $title-text-color;
+    transition: color $transition-dure-and-function;
+}
+.callback-form__input:focus+.callback-form__icon {
+    color: $accent-color;
+}
+.callback-form__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+.callback-form__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.callback-form__check-mark {
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    transition-delay: border background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.callback-form__terms {
+    color: $accent-color;
+}
+.callback-form__checkbox:checked+.callback-form__check-mark {
+    border: none;
+    background-color: $accent-color;
+}

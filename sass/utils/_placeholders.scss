@@ -1,0 +1,14 @@
+%list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+%flex-list {
+    display: flex;
+    column-gap: 30px;
+}
+%link {
+    text-decoration: none;
+}
+
+

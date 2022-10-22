@@ -1,0 +1,30 @@
+// .address {
+//     font-style: normal;
+// }
+.address__list {
+    @extend %list;
+    font-style: normal;
+}
+.address__item:not(:last-child) {
+    // display: block;
+    margin-bottom: 9px;
+}
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color $transition-dure-and-function;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+.address__link--bold {
+    letter-spacing: 0.03em;
+    color: $banner-text-color;
+}
+
+
