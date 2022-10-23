@@ -1,5 +1,4 @@
 .portfolio-list {
-    @extend %list;
     @extend %flex-list;
     flex-wrap: wrap;
     gap: 30px;

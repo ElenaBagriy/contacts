@@ -2,7 +2,6 @@
 //     font-style: normal;
 // }
 .address__list {
-    @extend %list;
     font-style: normal;
 }
 .address__item:not(:last-child) {

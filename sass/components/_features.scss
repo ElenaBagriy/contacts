@@ -1,9 +1,8 @@
 .features {
-    @extend %list;
     @extend %flex-list;
 }
 
-.features__icon {
+.features__icon-box {
     display: flex;
     align-items: center;
     justify-content: center;

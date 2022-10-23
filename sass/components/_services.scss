@@ -1,9 +1,7 @@
 .services {
-    @extend %list;
     @extend %flex-list;
 }
 .services__link {
-    @extend %link;
     position: relative;
 }
 .services__label {

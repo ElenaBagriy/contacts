@@ -1,5 +1,4 @@
 .social-list {
-    @extend %list;
     @extend %flex-list;
     column-gap: 10px;
 }
